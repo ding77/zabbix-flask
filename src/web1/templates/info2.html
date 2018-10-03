@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>info</title>
+		<link rel="stylesheet" type="text/css" href="static/info.css" /> 
+	</head>
+	<body>
+		
+		<div id='a'>
+			<div id="b">
+				<img src="static/head.jpg" />
+			</div>
+			<form action="/cpu" method="post">
+				<button type="submit" value="cpu" id='c'>CPU</botton>
+			</form>
+			<form action="/memory" method="post">
+				<button type="submit" value="memory" id='d'>MEMORY</botton>
+			</form>
+			<form action="/swap" method="post">
+				<button type="submit" value="swap" id='e'>SWAP</botton>
+			</form>
+			<form action="/disk" method="post">
+				<button type="submit" value="disk" id='f'>DISK</botton>
+			</form>
+			<form action="/network" method="post">
+				<button type="submit" value="network" id='g'>NETWORK</botton>
+			</form>
+			
+		</div>
+		<div id="cmd">
+			<h3>farbic远程控制结果</h3>
+			{% if result %}
+			<p ><textarea rows="10" name="params" cols="93">{{ result }}</textarea></p>
+			{% endif %}
+			
+			
+			
+		</div>
+		<div id='zabbix'>
+		<form action="/zabbix" method="post">
+				
+				<h3>zabbix监控数据</h3>
+				<textarea rows="10" name="params" cols="93">{{ message }}</textarea>
+
+		</form>
+	</div>
+		
+	
+		
+	</body>
+</html>

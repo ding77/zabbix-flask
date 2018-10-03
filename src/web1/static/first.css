@@ -1,0 +1,63 @@
+body
+{
+    
+ background:url(timg.jpg);
+   
+}
+#content{
+	background-color:beige;
+	height:400px;
+	width:500px;
+	margin-top:35%;
+	margin:0 auto
+
+}
+table{
+	height: 60px;
+	
+}
+.nu{
+
+	position:relative;
+    left:100px;
+		top:30px
+	
+}
+h1{
+	 text-shadow: 5px 5px 5px #FF0000;
+	 position:relative;
+	 	left:100px;
+	 
+}
+#a{
+	 position:absolute;
+    left:50px;
+    top:-20px;
+		width:200px;height:40px;
+		font-size: 16px;
+		
+}
+#b{
+	 position:absolute;
+    left:50px;
+    top:30px;
+		width:200px;height:40px;
+		font-size: 16px;
+}
+#c{
+	 position:absolute;
+    left:50px;
+    top:80px;
+		width:200px;height:40px;
+		background-color: #FF0000;
+		text-align: center;
+		font-size: 18px;
+}
+#d{
+	 position:absolute;
+    left:50px;
+    top:140px;
+		width:200px;height:40px;
+		background-color: #FF0000;
+		font-size: 18px;
+}

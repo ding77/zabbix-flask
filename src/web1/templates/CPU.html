@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<script src = "{{url_for('static',filename = 'js/echarts.js')}}"></script> 
+		<script src = "{{url_for('static',filename = 'js/infographic.js')}}"></script>
+		<title>CPU</title>
+		<link rel="stylesheet" type="text/css" href="css/info.css" /> 
+	</head>
+	<body>
+		<div id="business_load" style="width: 700px;height:400px;float: left" ></div>
+ 		<div id="bar" style="width: 500px;height:400px;float: left"></div>
+ 		
+ 		
+ 		<script type="text/javascript">
+        
+        var option = {
+            title:{
+                text:'CPU Infomation'
+            },
+            tooltip:{},
+            legend:{
+                data:['from beijng']
+            },
+            xAxis:{
+                data:["user","system","idle","interrupt","dpc"]
+            },
+            yAxis:{
+
+            },
+            series:[{
+                name:'total',
+                type:'line',
+                data:[{{user}},{{system}},{{idle}},{{interrupt}},{{dpc}}]
+            }]
+        };
+    
+        var myChart = echarts.init(document.getElementById('business_load'));
+
+     
+        myChart.setOption(option);
+    </script>
+	</body>
+	
+</html>
+
